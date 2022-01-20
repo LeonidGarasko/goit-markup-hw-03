@@ -109,6 +109,12 @@ body {
 .contacts:focus {
   color: var(--accent-text-color);
 }
+.navigation-list {
+  display: flex;
+}
+.head-address {
+  display: flex;
+}
 
 /*---------------HERO------------------- */
 .hero {
