@@ -38,7 +38,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .page {
   background-color: #ffffff;
@@ -359,6 +359,7 @@ body {
 
 .border {
   padding-top: 20px;
+  padding-bottom: 20px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -380,7 +381,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   width: 322px;
-  height: 36px;
+  height: 30px;
   margin-left: 24px;
   margin-right: 24px;
 }
