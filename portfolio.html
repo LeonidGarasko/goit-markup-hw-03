@@ -23,8 +23,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="container">
-        <nav>
+      <div class="container flex-container">
+        <nav class="flex">
           <a href="./index.html" class="navigation-logo link"
             ><span class="navigation-logo-first">Web</span>Studio</a
           >
@@ -42,12 +42,18 @@
                 >Портфолио</a
               >
             </li>
-            <li class="navigation-item"><a href="" class="navigation-link link">Контакты</a></li>
+            <li class="navigation-item">
+              <a href="" class="navigation-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="head-address list">
-          <li><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a></li>
+          <li class="adress-item">
+            <a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a>
+          </li>
+          <li class="adress-item">
+            <a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -74,76 +80,123 @@
           </ul>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <img src="./image/portfolio-jpg-1.jpg" alt="Технокряк" height="294" width="370" />
-              <h2 class="portfolio-item-title">Технокряк</h2>
-              <p class="portfolio-item-text text">Веб-сайт</p>
+              <img
+                class="portfolio-img"
+                src="./image/portfolio-jpg-1.jpg"
+                alt="Технокряк"
+                height="294"
+                width="370"
+              />
+              <div class="border">
+                <h2 class="portfolio-item-title">Технокряк</h2>
+                <p class="portfolio-item-text text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
+                class="portfolio-img"
                 src="./image/portfolio-jpg-2.jpg"
                 alt="Постер New Orlean vs Golden Star"
                 height="294"
                 width="370"
               />
-              <h2 class="portfolio-item-title">
-                Постер <span lang="en"> New Orlean vs Golden Star</span>
-              </h2>
-              <p class="portfolio-item-text text">Дизайн</p>
+              <div class="border">
+                <h2 class="portfolio-item-title">
+                  Постер <span lang="en"> New Orlean vs Golden Star</span>
+                </h2>
+                <p class="portfolio-item-text text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
+                class="portfolio-img"
                 src="./image/portfolio-jpg-3.jpg"
                 alt="Ресторан Seafood"
                 height="294"
                 width="370"
               />
-              <h2 class="portfolio-item-title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="portfolio-item-text text">Приложение</p>
-            </li>
-            <li class="portfolio-item">
-              <img src="./image/portfolio-jpg-4.jpg" alt="Проект Prime" height="294" width="370" />
-              <h2 class="portfolio-item-title">Проект <span lang="en">Prime</span></h2>
-              <p class="portfolio-item-text text">Маркетинг</p>
-            </li>
-            <li class="portfolio-item">
-              <img src="./image/portfolio-jpg-5.jpg" alt="Проект Boxes" height="294" width="370" />
-              <h2 class="portfolio-item-title">Проект <span lang="en">Boxes</span></h2>
-              <p class="portfolio-item-text text">Приложение</p>
+              <div class="border">
+                <h2 class="portfolio-item-title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="portfolio-item-text text">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
+                class="portfolio-img"
+                src="./image/portfolio-jpg-4.jpg"
+                alt="Проект Prime"
+                height="294"
+                width="370"
+              />
+              <div class="border">
+                <h2 class="portfolio-item-title">Проект <span lang="en">Prime</span></h2>
+                <p class="portfolio-item-text text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-img"
+                src="./image/portfolio-jpg-5.jpg"
+                alt="Проект Boxes"
+                height="294"
+                width="370"
+              />
+              <div class="border">
+                <h2 class="portfolio-item-title">Проект <span lang="en">Boxes</span></h2>
+                <p class="portfolio-item-text text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-img"
                 src="./image/portfolio-jpg-6.jpg"
                 alt="Inspiration has no Borders"
                 height="294"
                 width="370"
               />
-              <h2 lang="en" class="portfolio-item-title">Inspiration has no Borders</h2>
-              <p class="portfolio-item-text text">Веб-сайт</p>
+              <div class="border">
+                <h2 lang="en" class="portfolio-item-title">Inspiration has no Borders</h2>
+                <p class="portfolio-item-text text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
+                class="portfolio-img"
                 src="./image/portfolio-jpg-7.jpg"
                 alt="Издание Limited Edition"
                 height="294"
                 width="370"
               />
-              <h2 class="portfolio-item-title">Издание <span lang="en">Limited Edition</span></h2>
-              <p class="portfolio-item-text text">Дизайн</p>
-            </li>
-            <li class="portfolio-item">
-              <img src="./image/portfolio-jpg-8.jpg" alt="Проект LAB" height="294" width="370" />
-              <h2 class="portfolio-item-title">Проект <span lang="en">LAB</span></h2>
-              <p class="portfolio-item-text text">Маркетинг</p>
+              <div class="border">
+                <h2 class="portfolio-item-title">Издание <span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-item-text text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
+                class="portfolio-img"
+                src="./image/portfolio-jpg-8.jpg"
+                alt="Проект LAB"
+                height="294"
+                width="370"
+              />
+              <div class="border">
+                <h2 class="portfolio-item-title">Проект <span lang="en">LAB</span></h2>
+                <p class="portfolio-item-text text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-img"
                 src="./image/portfolio-jpg-9.jpg"
                 alt="Growing Business"
                 height="294"
                 width="370"
               />
-              <h2 lang="en" class="portfolio-item-title">Growing Business</h2>
-              <p class="portfolio-item-text text">Приложение</p>
+              <div class="border">
+                <h2 lang="en" class="portfolio-item-title">Growing Business</h2>
+                <p class="portfolio-item-text text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -163,7 +216,7 @@
                 href="https://goo.gl/maps/Vpe6fb8DpmaJ3iNz8"
                 target="_blank"
                 rel="nofollow norefferer noopener"
-                class="adress link"
+                class="address link"
               >
                 г. Киев, пр-т Леси Украинки, 26
               </a>
