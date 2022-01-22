@@ -138,7 +138,7 @@ body {
   display: flex;
 }
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /*---------------HERO------------------- */
@@ -206,10 +206,8 @@ body {
 }
 .examples-list {
   display: flex;
-  margin-right: -30px;
 }
-.examples-item {
-  width: calc(100% / 3 - var(--primary-margin-number));
+.examples-item:nth-last-child(n + 2) {
   margin-right: var(--primary-margin-number);
 }
 /*---------------команда------------------- */
@@ -221,13 +219,9 @@ body {
 }
 .team-list {
   display: flex;
-  margin-right: -30px;
 }
-.team-item {
-  width: calc(100% / 4 - var(--primary-margin-number));
+.team-item:nth-last-child(n + 2) {
   margin-right: var(--primary-margin-number);
-  background-color: var(--primary-white-color);
-  height: 368px;
 }
 .team-item-title {
   font-weight: 500;
@@ -237,7 +231,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   margin-bottom: 10px;
-  margin-top: var(--primary-margin-number);
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-item-text {
   font-size: 16px;
@@ -269,14 +266,13 @@ body {
   color: var(--primary-white-color);
 }
 .navigation-logo-footer {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-}
-.footer-logo {
   margin-bottom: 20px;
 }
 .navigation-logo-footer:hover,
@@ -292,12 +288,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.address-footer:nth-last-child(n + 2) {
   margin-bottom: 9px;
 }
-.address {
-  display: list-item;
-  margin-bottom: 9px;
-}
+
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-text-color);
@@ -345,13 +340,13 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 .portfolio-item {
   width: calc(100% / 3 - var(--primary-margin-number));
-  margin-right: var(--primary-margin-number);
+  margin-left: var(--primary-margin-number);
   margin-bottom: var(--primary-margin-number);
-  height: 404px;
 }
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
