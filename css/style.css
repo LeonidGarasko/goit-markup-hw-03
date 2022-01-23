@@ -5,6 +5,8 @@
   --primary-white-color: #ffffff;
   --primary-title-color: #212121;
   --primary-margin-number: 30px;
+  --card-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 * {
   box-sizing: border-box;
@@ -298,7 +300,18 @@ body {
   color: var(--accent-text-color);
 }
 /*---------------портфолио------------------- */
-
+.portfolio-item-title {
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+}
+.portfolio-item-text {
+  display: block;
+  font-size: 16px;
+  line-height: 1.87;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -338,12 +351,16 @@ body {
   background-color: var(--accent-text-color);
 }
 .portfolio-list {
+  /* outline: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin-left: calc(-1 * var(--primary-margin-number));
+  margin-bottom: calc(-1 * var(--primary-margin-number));
 }
-.portfolio-item {
+.portfolio-list > .portfolio-item {
   width: calc(100% / 3 - var(--primary-margin-number));
   margin-left: var(--primary-margin-number);
   margin-bottom: var(--primary-margin-number);
@@ -351,32 +368,9 @@ body {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
-.border {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+.content {
+  padding: 20px 24px;
 }
-.portfolio-item-title {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-title-color);
-  width: 322px;
-  height: 36px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
-}
-.portfolio-item-text {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 1.87;
-  width: 322px;
-  height: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
+.portfolio-card {
+  box-shadow: var(--card-shadow);
 }
